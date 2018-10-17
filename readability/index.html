@@ -51,7 +51,7 @@
                 <code>
     int numerator = r.Sum();
     int denominator = r.Length;
-    int avgValue = denominator is 
+    decimal avgValue = denominator is 
                     | NonZeroInt => numerator/denominator;
                     | int => 0;
                 </code>
@@ -77,7 +77,7 @@
                 <code>
     int numerator = r.Sum();
     NonZeroInt denominator = r.Length;
-    int avgValue = numerator/denominator;
+    decimal avgValue = numerator/denominator;
                 </code>
             </pre>
             <p>This way, you don't have the unexpected behavior of returning something that might be mistaken for a valid result.  You'd need to write something to handle the case where you have 0 records (EmptyList, anyone?), of course.</p>
