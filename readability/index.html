@@ -59,10 +59,12 @@
             <p>But, of course, the right way to do it would be to have GetLength return a NonZeroInt, give the input parameter a type constraint that requires it to have at least one record:</p>
             <pre>
                 <code>
-    constraint NonEmptyList&lt;T&gt;(T[] t)
+    constraint NonEmptyList&lt;T&gt;(T t) where T : IEnumerable
     {
         t.Length != 0;
     }
+
+    var r = new NonEmptyList&lt;Record&gt;(){ //This has to have at least one record! };
 
     public NonZeroInt GetLength(NonEmptyList r)
     {
@@ -73,8 +75,8 @@
             <p>Then you can just write this instead:</p>
             <pre>
                 <code>
-    int numerator = GetSum(r);
-    NonZeroInt denominator = GetLength(r);
+    int numerator = r.Sum();
+    NonZeroInt denominator = r.Length;
     int avgValue = numerator/denominator;
                 </code>
             </pre>
