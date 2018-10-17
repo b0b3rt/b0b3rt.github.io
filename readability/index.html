@@ -39,11 +39,6 @@
     {
         val != 0;
     }
-        
-    public int GetLength(Record[] r)
-    {
-        return r.Length;
-    }
                 </code>
             </pre>
             <p>Then, to avoid a compile-time error (because what kind of language would let you divide by something that might evaluate to 0?), you'll need to write:</p>
@@ -56,7 +51,7 @@
                     | int => 0;
                 </code>
             </pre>
-            <p>But, of course, the right way to do it would be to have GetLength return a NonZeroInt, give the input parameter a type constraint that requires it to have at least one record:</p>
+            <p>But, of course, the right way to do it would be to guarantee that the list's length satisfies the NonZeroInt type constraint:</p>
             <pre>
                 <code>
     constraint NonEmptyList&lt;T&gt;(T t) where T : IEnumerable
@@ -65,11 +60,6 @@
     }
 
     var r = new NonEmptyList&lt;Record&gt;(){ //This has to have at least one record! };
-
-    public NonZeroInt GetLength(NonEmptyList r)
-    {
-        return r.Length;
-    }
                 </code>
             </pre>
             <p>Then you can just write this instead:</p>
