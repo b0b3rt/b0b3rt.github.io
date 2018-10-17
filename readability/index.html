@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            Dependent typing considered unreadable
+        </title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127645120-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127645120-1');
+        </script>
+        <style>
+            .bg{background-color: black}
+            .txt{color: white}
+            .dt{width:4em;flex-shrink:0;padding-bottom:.9em;color: white}
+            .ft{text-align:center;position:relative;width:100%;bottom:0;padding-bottom:.9em}
+            pre{background-color:#333333}
+            a,p,code{color: white}
+            body{display:flex;flex-direction:column;align-items:right;}
+        </style>
+    </head>
+    <body class="bg">
+        <div>
+            <p>Actually, this is a complaint I have with most functional languages too, but I figured I may as well ask for the sky.  This seems to be almost entirely a function of historical path dependence, rather than any deliberate optimization.</p>
+            <p>For the record, my favorite language syntax of all time belongs to C#, with Javascript (ES6+) coming in at a close second.  Python would do in a pinch, too.  Obviously none of them have the type system I want, but there's no reason in principle that you couldn't have both nice syntax and a good type system.</p>
+            <p>Scala occupies an awkard halfway point on both counts: it starts out maybe 70% as readable as Java and rapidly descends as soon as you start doing anything interesting with it.  It also forces you to engage in tedious hackery to get an approximation of the functionality that something like <a href="https://www.idris-lang.org/">Idris</a> would provide out of the box, and you still can't get all the way there.</p>
+            <p>I know that the trade-off with readability is brevity - C# lately has had me feeling the boilerplate blues - but the option would certainly be nice.</p>
+            <p>Something like this would be really nice:</p>
+            <pre>
+                <code>
+    constraint NonZeroInt<int>(int val)
+    {
+        val != 0;
+    }
+        
+    public int GetLength(Record[] r)
+    {
+        return r.Length;
+    }
+                </code>
+            </pre>
+            <p>Then, to avoid a compile-time error (because what kind of language would let you divide by something that might evaluate to 0?), you'll need to write:</p>
+            <pre>
+                <code>
+    int numerator = GetSum(r);
+    int denominator = GetLength(r);
+    int avgValue = denominator is 
+                    | NonZeroInt => numerator/denominator;
+                    | int => 0;
+                </code>
+            </pre>
+            <p>But, of course, the right way to do it would be to have GetLength return a NonZeroInt, give the input parameter a type constraint that requires it to have at least one record, and then you can just write this instead:</p>
+            <pre>
+                <code>
+    int numerator = GetSum(r);
+    NonZeroInt denominator = GetLength(r);
+    int avgValue = numerator/denominator;
+                </code>
+            </pre>
+            <p>This way, you don't have the unexpected behavior of returning something that might be mistaken for a valid result.  You'd need to write something to handle the case where you have 0 records (EmptyList<List>, anyone?), of course.</List></p>
+        </div>
+    </body>
+    <footer class="ft txt">
+        <a href="./about/">About</a> | Contact: rot13 of orggrefpnyr@cebgbaznvy.pbz | <a href="./">Home</a>
+    </footer>
+</html>
