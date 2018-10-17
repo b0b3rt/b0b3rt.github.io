@@ -52,7 +52,21 @@
                     | int => 0;
                 </code>
             </pre>
-            <p>But, of course, the right way to do it would be to have GetLength return a NonZeroInt, give the input parameter a type constraint that requires it to have at least one record, and then you can just write this instead:</p>
+            <p>But, of course, the right way to do it would be to have GetLength return a NonZeroInt, give the input parameter a type constraint that requires it to have at least one record:</p>
+            <pre>
+                <code>
+    constraint NonEmptyList&lt;T&gt;(T[] t)
+    {
+        t.Length != 0;
+    }
+
+    public NonZeroInt GetLength(NonEmptyList r)
+    {
+        return r.Length;
+    }
+                </code>
+            </pre>
+            <p>Then you can just write this instead:</p>
             <pre>
                 <code>
     int numerator = GetSum(r);
@@ -60,7 +74,7 @@
     int avgValue = numerator/denominator;
                 </code>
             </pre>
-            <p>This way, you don't have the unexpected behavior of returning something that might be mistaken for a valid result.  You'd need to write something to handle the case where you have 0 records (EmptyList<List>, anyone?), of course.</List></p>
+            <p>This way, you don't have the unexpected behavior of returning something that might be mistaken for a valid result.  You'd need to write something to handle the case where you have 0 records (EmptyList, anyone?), of course.</p>
         </div>
     </body>
     <footer class="ft txt">
