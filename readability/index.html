@@ -18,12 +18,14 @@
             .dt{width:4em;flex-shrink:0;padding-bottom:.9em;color: white}
             .ft{text-align:center;position:relative;width:100%;bottom:0;padding-bottom:.9em}
             pre{background-color:#333333}
-            a,p,code{color: white}
+            a,p,strong,code{color: white}
             body{display:flex;flex-direction:column;align-items:right;}
         </style>
     </head>
     <body class="bg">
         <div>
+            <strong>Dependent typing considered unreadable</strong>
+            <hr>
             <p>Actually, this is a complaint I have with most functional languages too, but I figured I may as well ask for the sky.  This seems to be almost entirely a function of historical path dependence, rather than any deliberate optimization.</p>
             <p>For the record, my favorite language syntax of all time belongs to C#, with Javascript (ES6+) coming in at a close second.  Python would do in a pinch, too.  Obviously none of them have the type system I want, but there's no reason in principle that you couldn't have both nice syntax and a good type system.</p>
             <p>Scala occupies an awkard halfway point on both counts: it starts out maybe 70% as readable as Java and rapidly descends as soon as you start doing anything interesting with it.  It also forces you to engage in tedious hackery to get an approximation of the functionality that something like <a href="https://www.idris-lang.org/">Idris</a> would provide out of the box, and you still can't get all the way there.</p>
