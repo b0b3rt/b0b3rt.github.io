@@ -5,6 +5,35 @@ slug: bay-restaurants
 date: 2026-01-10
 ---
 
+<style>
+/* Wider page for tables */
+article { max-width: 1400px; }
+
+/* Softer text color */
+h1, h2, h3, p, td, th, li, a, strong { color: #ccc !important; }
+
+/* Softer headings */
+h1 { font-size: 1.6em; font-weight: normal; margin-bottom: 0.3em; }
+h2 { font-size: 1.25em; font-weight: normal; margin-top: 1.5em; }
+h3 { font-size: 1.1em; font-weight: normal; }
+
+/* Fixed table layout for consistent columns */
+table { table-layout: fixed; width: 100%; }
+
+/* 8-column tables: Restaurant | Location | Cuisine | Exceptional Items | Skip/Mixed | Notes | FTC Review | Excitement */
+th:nth-child(1), td:nth-child(1) { width: 11%; }   /* Restaurant */
+th:nth-child(2), td:nth-child(2) { width: 7%; }    /* Location */
+th:nth-child(3), td:nth-child(3) { width: 9%; }    /* Cuisine */
+th:nth-child(4), td:nth-child(4) { width: 21%; }   /* Exceptional Items / Notes (in 6-col) */
+th:nth-child(5), td:nth-child(5) { width: 12%; }   /* Skip/Mixed / FTC Review (in 6-col) */
+th:nth-child(6), td:nth-child(6) { width: 21%; }   /* Notes / Excitement (in 6-col) */
+th:nth-child(7), td:nth-child(7) { width: 7%; }    /* FTC Review */
+th:nth-child(8), td:nth-child(8) { width: 7%; text-align: center; }  /* Excitement */
+
+/* Word wrapping for long text */
+td { word-wrap: break-word; overflow-wrap: break-word; }
+</style>
+
 # Bay Area Restaurant Recommendations
 
 Compiled from my FoodTalkCentral reviews (2022-2026) and other personal notes, with the help of Claude Opus 4.5.
