@@ -303,7 +303,7 @@ Generally order delivery; have only been in person once. Not a "destination" but
 
 ## Casual/Budget ($)
 
-#### [Tsuruya](https://www.google.com/maps/place/Tsuruya/@37.8692929,-122.2688655,17z/) ★★★★
+#### [Tsuruya](https://maps.app.goo.gl/qfDRG4haTJmcD4uQ7) ★★★★
 *Berkeley · Ramen* · [FTC→](https://www.foodtalkcentral.com/t/tsuruya-berkeley/17464/1)
 
 Best ramen in Berkeley. IMO competitive with Mensho down in Oakland.
