@@ -1,0 +1,29 @@
+name: Build Markdown Posts
+
+on:
+  push:
+    branches: [master]
+    paths: ['markdown-sources/**.md']
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install marked gray-matter
+
+      - name: Build HTML from markdown
+        run: node scripts/build-posts.mjs
+
+      - name: Commit generated HTML
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-generate HTML from markdown"
+          file_pattern: 'index.html */index.html'
