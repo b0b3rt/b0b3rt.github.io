@@ -12,7 +12,13 @@ date: 2026-01-10
 
 /* Override base template */
 body.bg { background-color: #181818 !important; }
-article { max-width: 1400px; }
+article { max-width: 650px; }
+
+/* Tables can break out wider */
+table {
+    width: 140%;
+    margin-left: -20%;
+}
 
 /* Typography */
 body, p, td, th, li {
@@ -42,11 +48,29 @@ h2 {
     color: #b0b0b0 !important;
 }
 h3 {
-    font-size: 1.1em;
-    font-weight: 600;
+    font-size: 0.95em;
+    font-weight: 400;
     font-style: normal;
-    margin: 1.5em 0 0.5em 0;
-    color: #a0a0a0 !important;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    margin: 2.5em 0 1em 0;
+    color: #888 !important;
+}
+h4 {
+    font-size: 1.05em;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1.8em 0 0.2em 0;
+    color: #d4d4d4 !important;
+}
+/* Metadata line after H4 */
+h4 + p {
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+}
+h4 + p > em:first-child {
+    color: #888 !important;
+    font-size: 0.9em;
 }
 
 /* Intro paragraph */
@@ -142,87 +166,188 @@ li { margin-bottom: 0.3em; }
 
 Compiled from my FoodTalkCentral reviews (2022-2026) and other personal notes, with the help of Claude Opus 4.5.
 
+This page is not meant to be a comprehensive list of all the place I've eaten at in the Bay Area, but I do include all the fine dining restaurants I've been to since moving up to the Bay, even though I'd only recommend the first two in an unqualified way.
+
+The star ratings are pretty vibes-based. Excepting the fine dining section, everything on this page clears the threshold of "I would recommend eating here, if you're into this kind of food at all".
+
+It might not look like it, but I'm first and foremost a sushi guy, and my standards there are correspondingly higher. I'm also not that price-sensitive, but I am somewhat sensitive to various convenience factors. As an example... the fact that I rate both Tancho and Mujiri 2.5 stars should not be read as "the sushi at Mujiri as as good as the sushi at Tancho". Tancho requires a reservation and is generally more than a 30-minute drive, and it's directly competing with Utzutzu and Sushi Salon as an omakase experience. Mujiri is for scratching the itch for fish of reasonable quality, and it does that pretty well.
+
 ---
 
 ## Fine Dining ($$$$)
 
-| Restaurant                                        | Location | Cuisine                 | Notes                                                                                                                                                                                                                            | FTC Review                                                             | Excitement |
-|---------------------------------------------------|----------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|:----------:|
-| [**Commis**](https://commisrestaurant.com/)       | Oakland  | Modern American Tasting | My favorite 2-star place I've tried so far in the Bay, in the last few years. Highlights: onion financier ("mad genius level"), beetroot prep, slow poached egg with smoked dates.                                               | [Link](https://www.foodtalkcentral.com/t/commis-oakland/15390/1)       |     4      |
-| [**The Shota**](https://www.theshotasf.com/)      | SF       | Omakase                 | Somewhat better than the two proper Omakase spots in the East Bay, but is $300/head (and in SF). Would be in my top-10 but not top-3 in LA.                                                                                      | -                                                                      |     4      |
-| [**Lazy Bear**](https://www.lazybearsf.com/)      | SF       | Modern American Tasting | Interesting, but am sort of mixed on whether it felt "worth it". Am glad I went once, though. Course note cards provided. Highlights: Dungeness crab (10/10), dandelion cacao pudding. Mixed: eggs (not enough bacon), kohlrabi. | [Link](https://www.foodtalkcentral.com/t/lazy-bear-sf/16545/2)         |     3      |
-| [**Californios**](https://www.californiossf.com/) | SF       | Mexican Tasting         | Was a lot of corn, though the menu does change a lot. Highlights: soup course, final fish course. Mixed: early courses "just good", desserts mixed, pacing too slow (3.5 hrs). Other people on FTC are huge fans, so idk.        | [Link](https://www.foodtalkcentral.com/t/californios/13587/15)         |     3      |
-| [**Nisei**](https://www.restaurantnisei.com/)     | SF       | Modern Kaiseki          | Very pretty, mostly quite tasty, but nothing was a "knockout." Not particularly memorable.                                                                                                                                       | [Link](https://www.foodtalkcentral.com/t/nisei-modern-kaiseki/17490/3) |     2      |
+#### [Commis](https://commisrestaurant.com/) ★★★★
+*Oakland · Modern American Tasting* · [FTC→](https://www.foodtalkcentral.com/t/commis-oakland/15390/1)
+
+My favorite 2-star place I've tried so far in the Bay, in the last few years. **Highlights**: onion financier ("mad genius level"), beetroot prep, slow poached egg with smoked dates.
+
+#### [The Shota](https://www.theshotasf.com/) ★★★★
+*SF · Omakase*
+
+Somewhat better than the two proper Omakase spots in the East Bay, but is $300/head (and in SF). Would be in my top-10 but not top-3 in LA.
+
+#### [Lazy Bear](https://www.lazybearsf.com/) ★★★
+*SF · Modern American Tasting* · [FTC→](https://www.foodtalkcentral.com/t/lazy-bear-sf/16545/2)
+
+Interesting, but am sort of mixed on whether it felt "worth it". Am glad I went once, though. Course note cards provided. **Highlights**: Dungeness crab (10/10), dandelion cacao pudding. **Mixed**: eggs (not enough bacon), kohlrabi.
+
+#### [Californios](https://www.californiossf.com/) ★★★
+*SF · Mexican Tasting* · [FTC→](https://www.foodtalkcentral.com/t/californios/13587/15)
+
+Was a lot of corn, though the menu does change a lot. **Highlights**: soup course, final fish course. **Mixed**: early courses "just good", desserts mixed, pacing too slow (3.5 hrs). Other people on FTC are huge fans, so idk.
+
+#### [Nisei](https://www.restaurantnisei.com/) ★★
+*SF · Modern Kaiseki* · [FTC→](https://www.foodtalkcentral.com/t/nisei-modern-kaiseki/17490/3)
+
+Very pretty, mostly quite tasty, but nothing was a "knockout." Not particularly memorable.
 
 ---
 
 ## High-End ($$$)
 
-### Sushi/Japanese
+#### [San Ho Won](https://www.sanhowon.com/) ★★★★★
+*SF (Mission) · Korean BBQ* · [FTC→](https://www.foodtalkcentral.com/t/san-ho-won/13439/30)
 
-| Restaurant                                              | Location      | Cuisine  | Notes                                                                                                                                                                             | FTC Review                                                                                 | Excitement |
-|---------------------------------------------------------|---------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|:----------:|
-| [**Utzutzu**](https://resy.com/cities/sf/utzutzu)       | Alameda       | Omakase  | ~75% of top LA places at half the price. Hidden entrance. Highlights: hirame, shima aji, maguro, saba, tako no sumiso, temaki. Mixed: A5 wagyu "not the star."                    | [Link](https://www.foodtalkcentral.com/t/utzutzu-alameda/15190/1)                          |    3.5     |
-| [**Sushi Salon**](https://www.sushi-salon.com/)         | Oakland       | Omakase  | Exceptional neta quality, good rice. Can reorder favorites. Portions slightly small.                                                                                              | [Link](https://www.foodtalkcentral.com/t/sushi-salon-oakland/16377/1)                      |    3.5     |
-| [**Delage**](https://delage-oakland.com/)               | Oakland       | Japanese | Japanese w/sushi courses in between. $100 = "a steal." Highlights: bamboo-wrapped sushi, gindara katsu, akami & isaki nigiri, pomegranate mochi. Mixed: katsuo tataki "too busy." | [Link](https://www.foodtalkcentral.com/t/delage-oakland/14829/1)                           |    2.5     |
-| [**Tancho**](https://www.tanchojapaneserestaurant.com/) | Castro Valley | Omakase  | $120(?) baseline is a steal; supplements overpriced. Highlights: engawa ("winner of the night"), jasmine tea jello. Mixed: snow crab "ok."                                        | [Link](https://www.foodtalkcentral.com/t/tancho-japanese-restaurant-castro-valley/14953/1) |    2.5     |
+Nothing like other kbbq places; you don't cook anything yourself and the meat is much higher quality. Don't bother with the tasting menu and just order a la carte. Bring friends to order as many meats as possible. **Highlights**: default/free banchan (all of them), galbi mandu, gyeran-jjim (egg souffle), grilled tteok, double-cut galbi, tongue. **Skip**: on-menu banchan, grilled mackerel.
 
+#### [Burdell](https://www.burdelloakland.com/) ★★★★★
+*Oakland · Southern* · [FTC→](https://www.foodtalkcentral.com/t/burdell-oakland/16054/1)
 
-### Korean
+**Highlights**: marinated cauliflower, lamb ribs, biscuits, rabbit (though the rabbit required ordering the tasting menu).
 
-| Restaurant                                  | Location     | Cuisine    | Exceptional Items                                                                                                                                            | Skip/Mixed      | Notes                                                                                                                                                               | FTC Review                                                    | Excitement |
-|---------------------------------------------|--------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|:----------:|
-| [**San Ho Won**](https://www.sanhowon.com/) | SF (Mission) | Korean BBQ | Default/free banchan (all of them), galbi mandu, gyeran-jjim (egg souffle), grilled tteok, double-cut galbi, neck tongue, ssamjang & house chili oil, bingsu | On-menu banchan | Nothing like other kbbq places; you don't cook anything yourself and the meat is much higher quality. Don't bother with the tasting menu and just order a la carte. | [Link](https://www.foodtalkcentral.com/t/san-ho-won/13439/30) |     5      |
+#### [Golden Bear Station](https://goldenbearstation.com/) ★★★★★
+*Kenwood · Wine Country* · [FTC→](https://www.foodtalkcentral.com/t/golden-bear-station-joshua-smookler-kenwood/17251/2)
 
-### American/California
+Maybe the best steak of my life. Everything else was good to great, too. You could treat this as fine dining, but they don't have a (strict) dress code or a tasting menu, and it's a damn sight cheaper than most 1-star places. Large format dishes seem to be the play, so come with friends. **Highlights**: dry-aged porterhouse.
 
-| Restaurant                                     | Location | Cuisine                    | Exceptional Items                                                                                                | Skip/Mixed                               | Notes                                                                                                                                           | FTC Review                                                        | Excitement |
-|------------------------------------------------|----------|----------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|:----------:|
-| [**Burdell**](https://www.burdelloakland.com/) | Oakland  | Southern                   | Marinated cauliflower ("best ever"), lamb ribs ("astonishingly tender"), albacore tartare, cathead biscuits      | -                                        | Strong across the menu, pretty "classic" upscale restaurant style (menu, decorations, patrons).                                                 | [Link](https://www.foodtalkcentral.com/t/burdell-oakland/16054/1) |     5      |
-| [**Oken**](https://www.okenoakland.com/)       | Oakland  | Japanese/Korean-influenced | Kakuni ("best I've had"), chocolate cake ("magical"), romano beans, triple cooked potatoes                       | Hwe (salty), ocean trout ("merely that") | All else equal, would go to to either Kiraku or Ippuku first, but probably easier to get seats here and the menu is probably more "accessible". | [Link](https://www.foodtalkcentral.com/t/oken-oakland/19150/4)    |     3      |
-| [**Pomet**](https://pomet-oakland.com/)        | Oakland  | California                 | Smoked potatoes ("best restaurant potatoes ever"), quail ("flawlessly cooked"), McFarland trout, charred turnips | Pasta dishes (noodle texture), bread     | Farm-to-table. Apps better than mains.                                                                                                          | [Link](https://www.foodtalkcentral.com/t/pomet-oakland/15040/1)   |     3      |
+#### [Kiraku](https://kirakuberkeley.com/) ★★★★★
+*Berkeley · Izakaya* · [FTC→](https://www.foodtalkcentral.com/t/kiraku-berkeley-japanese-tapas-review/4419/7)
 
-### Other
+Can't make reservations online. Very cramped inside. Worth it. You can get out of here for less than $50/head if you try, but that's not why you're here, is it? **Highlights**: grilled smoked unagi ("Bite of the night!"), pork jowl, beef intestine.
 
-| Restaurant                                                | Location | Cuisine         | Exceptional Items                                      | Skip/Mixed                                     | Notes                                                                     | FTC Review                                                                                    | Excitement |
-|-----------------------------------------------------------|----------|-----------------|--------------------------------------------------------|------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|:----------:|
-| [**Ippuku**](https://ippukuberkeley.com/)                 | Berkeley | Yakitori        | Bacon-wrapped mochi ("best thing"), all chicken dishes | Beef tongue (not worth price/space), camembert | Reserve via Tock. Chicken is the focus.                                   | [Link](https://www.foodtalkcentral.com/t/ippuku-berkeley/16829/1)                             |     4      |
-| [**Via del Corso**](https://www.viadelcorso.net/)         | Berkeley | Upscale Italian | Pretty much everything is good                         | -                                              | -                                                                         | -                                                                                             |     3      |
-| [**Golden Bear Station**](https://goldenbearstation.com/) | Kenwood  | Wine Country    | Dry-aged porterhouse                                   | -                                              | Maybe the best steak of my life.  Everything else was good to great, too. | [Link](https://www.foodtalkcentral.com/t/golden-bear-station-joshua-smookler-kenwood/17251/2) |     5      |
+#### [Ippuku](https://ippukuberkeley.com/) ★★★★
+*Berkeley · Yakitori* · [FTC→](https://www.foodtalkcentral.com/t/ippuku-berkeley/16829/1)
+
+**Highlights**: bacon-wrapped mochi (or any grilled mochi, probably), basically all the chicken dishes. **Skip**: beef tongue (not worth price/space), camembert (though that might just be my taste).
+
+#### [Utzutzu](https://resy.com/cities/sf/utzutzu) ★★★½
+*Alameda · Omakase* · [FTC→](https://www.foodtalkcentral.com/t/utzutzu-alameda/15190/1)
+
+Would be highly competitive in LA at its price point. Has a hidden entrance. **Highlights**: hirame, shima aji, maguro, saba, tako no sumiso, temaki.
+
+#### [Sushi Salon](https://www.sushi-salon.com/) ★★★½
+*Oakland · Omakase* · [FTC→](https://www.foodtalkcentral.com/t/sushi-salon-oakland/16377/1)
+
+Exceptional neta quality, good rice. Can reorder pieces you liked at the end. Portions slightly small.
+
+#### [Oken](https://www.okenoakland.com/) ★★★
+*Oakland · Japanese/Korean-influenced* · [FTC→](https://www.foodtalkcentral.com/t/oken-oakland/19150/4)
+
+All else equal, would go to either Kiraku or Ippuku first, but probably easier to get seats here and the menu is probably more "accessible". **Highlights**: best kakuni I've had, magical chocolate cake, romano beans, triple cooked potatoes. **Skip**: hwe (salty), ocean trout.
+
+#### [Pomet](https://pomet-oakland.com/) ★★★
+*Oakland · California* · [FTC→](https://www.foodtalkcentral.com/t/pomet-oakland/15040/1)
+
+Apps better than mains. **Highlights**: smoked potatoes, quail, McFarland trout, charred turnips. **Skip**: pasta dishes, bread.
+
+#### [Via del Corso](https://www.viadelcorso.net/) ★★★
+*Berkeley · Upscale Italian*
+
+Strong across the menu, pretty "classic" upscale restaurant style (menu, decorations, patrons). Pretty much everything is good.
+
+#### [Delage](https://delage-oakland.com/) ★★½
+*Oakland · Japanese* · [FTC→](https://www.foodtalkcentral.com/t/delage-oakland/14829/1)
+
+Japanese w/sushi courses in between. Good value.
+
+#### [Tancho](https://www.tanchojapaneserestaurant.com/) ★★½
+*Castro Valley · Omakase* · [FTC→](https://www.foodtalkcentral.com/t/tancho-japanese-restaurant-castro-valley/14953/1)
+
+$120 baseline is a steal; post-meal a la carte nigiri available but surprisingly pricey.
 
 ---
 
 ## Mid-Range ($$)
 
-| Restaurant                                                                                       | Location | Cuisine          | Exceptional Items                                                          | Skip/Mixed                                                                | Notes                                                                                               | FTC Review                                                                             | Excitement |
-|--------------------------------------------------------------------------------------------------|----------|------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|:----------:|
-| [**Mujiri**](https://mujiri-oakland.com/)                                                        | Oakland  | Sushi            | All fish, rice quality                                                     | Slight oversaucing on some pieces                                         | The one good mid-tier sushi place in the East Bay. Primarily takeout with bar seats.                | [Link](https://www.foodtalkcentral.com/t/mujiri-oakland/14875/1)                       |     3      |
-| [**Sfizio**](https://www.sfiziopasta.com/)                                                       | Oakland  | Italian          | Menu changes frequently.  Grilled vegetables & desserts are usually great. | Focaccia ("weird")                                                        | Hybrid service. Could charge double for pasta/dessert quality.                                      | [Link](https://www.foodtalkcentral.com/t/sfizio-oakland/17537/1)                       |     4      |
-| [**Soba Ichi**](https://sobaichioakland.com/)                                                    | Oakland  | Soba             | Soba noodles, soba-cha gelato                                              | -                                                                         | Definitely get the gelato.                                                                          | -                                                                                      |     3      |
-| [**Kaokao Grill**](https://www.google.com/maps/place/KAOKAO+Grill/@37.8583766,-122.2528705,17z/) | Berkeley | Asian BBQ Fusion | -                                                                          | -                                                                         | Weird Asian BBQ fusion, very surprisingly good. Tiny menu. Generally order delivery.                | -                                                                                      |     2      |
-| [**Kiraku**](https://kirakuberkeley.com/)                                                        | Berkeley | Izakaya          | Grilled smoked unagi ("Bite of the night!"), pork jowl, beef intestine     | -                                                                         | Can't make reservations online.  Very cramped inside.  Worth it.                                    | [Link](https://www.foodtalkcentral.com/t/kiraku-berkeley-japanese-tapas-review/4419/7) |     5      |
-| [**Great China**](https://www.greatchinaberkeley.com/)                                           | Berkeley | Chinese          | Tea-smoked duck, "Ant Climbed the Tree", dumplings, garlic fried rice      | Salt & pepper prawns (not crispy), sauteed crab (flavor "just not there") | -                                                                                                   | [Link](https://www.foodtalkcentral.com/t/great-china-berkeley/17/27)                   |     2      |
-| [**Moobongri**](https://moobongri.com/)                                                          | Oakland  | Korean Soup      | Rice cake & dumpling soup                                                  | -                                                                         | Generally order delivery; have only been in person once.  Not a "destination" but fun with friends. | -                                                                                      |     2      |
+#### [Sfizio](https://www.sfiziopasta.com/) ★★★★
+*Oakland · Italian* · [FTC→](https://www.foodtalkcentral.com/t/sfizio-oakland/17537/1)
+
+Hybrid service. Could charge double for pasta/dessert quality. Menu changes frequently. **Highlights**: grilled vegetables & desserts. **Skip**: focaccia was kinda weird and I wasn't a huge fan.
+
+#### [Soba Ichi](https://sobaichioakland.com/) ★★★
+*Oakland · Soba*
+
+They also have soba-cha gelato, which you should definitely get.
+
+#### [Mujiri](https://mujiri-oakland.com/) ★★½
+*Oakland · Sushi* · [FTC→](https://www.foodtalkcentral.com/t/mujiri-oakland/14875/1)
+
+The one good mid-tier sushi place in the East Bay. Primarily takeout with bar seats. Great fish & rice quality. Slight tendency to oversaucing.
+
+#### [Kaokao Grill](https://maps.app.goo.gl/D34VuQkLmHoidZ2M8) ★★½
+*Berkeley · Asian BBQ Fusion*
+
+Weird Asian BBQ fusion. The char siu is insane. Tiny menu. I generally order delivery, but you can dine in.
+
+#### [Great China](https://www.greatchinaberkeley.com/) ★★
+*Berkeley · Chinese* · [FTC→](https://www.foodtalkcentral.com/t/great-china-berkeley/17/32)
+
+**Highlights**: tea-smoked duck, "Ant Climbed the Tree", dumplings, garlic fried rice, and they also do the best American-Chinese I've ever had.
+
+#### [Moobongri](https://moobongri.com/) ★★
+*Oakland · Korean Soup*
+
+Generally order delivery; have only been in person once. Not a "destination" but fun with friends. **Highlights**: rice cake & dumpling soup (though I think they changed their recipe recently).
 
 ---
 
 ## Casual/Budget ($)
 
-| Restaurant                                                                             | Location | Cuisine         | Exceptional Items                                                 | Skip/Mixed       | Notes                                                                                                                                                                 | FTC Review                                                                        | Excitement |
-|----------------------------------------------------------------------------------------|----------|-----------------|-------------------------------------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|:----------:|
-| [**Tsuruya**](https://www.google.com/maps/place/Tsuruya/@37.8692929,-122.2688655,17z/) | Berkeley | Ramen           | Chicken chashu ("best I've had"), bamboo shoots, broth, jammy egg | -                | Best ramen in Berkeley.                                                                                                                                               | [Link](https://www.foodtalkcentral.com/t/tsuruya-berkeley/17464/1)                |     4      |
-| [**Tahina**](https://tahinafreshmed.com/)                                              | Alameda  | Mediterranean   | Eggplant dip, pita.                                               | -                | The one decent Mediterranean spot I've found up here. Never been in person, always ordered via DoorDash.                                                              | -                                                                                 |     3      |
-| [**Jungdon Katsu**](https://www.jungdonkatsu.com/)                                     | East Bay | Katsu           | Katsu                                                             | -                | Used to be a ghost kitchen, ordered via DoorDash/etc. Apparently now has an Emeryville location (haven't been). "Better katsu than any specialist, including Kagura." | [Link](https://www.foodtalkcentral.com/t/jungdon-katsu/15727/1)                   |     3      |
-| [**Huangcheng Noodle House**](https://www.huangchengnoodleca.com/)                     | Oakland  | Chinese Noodles | Chongqing street noodles with knife-cut noodles                   | -                | Good both as soup & "dry" (with sauce). Better in person than delivery.                                                                                               | -                                                                                 |     2      |
-| [**Poppy Bagels**](https://www.poppybagelsca.com/)                                     | East Bay | Bagels          | Bagels (especially as sandwiches)                                 | -                | Good texture, acceptable flavor. Reportedly work well with toppings.                                                                                                  | [Link](https://www.foodtalkcentral.com/t/bagels-east-bay/16465/10)                |     2      |
-| [**The Smokehouse**](https://www.eatsmokehouse.com/)                                   | Berkeley | Burgers         | "Correct" thin hamburgers, much less greasy                       | Fries (terrible) | Unlike everyone else doing that style of fast food hamburger.                                                                                                         | -                                                                                 |     2      |
-| [**North Berkeley BART Taco Stand**](https://maps.app.goo.gl/ak8XkQM23sGGCqUd6)        | Berkeley | Tacos           | Tripe                                                             | -                | Open till midnight (2am Fri/Sat). Self-service toppings. An extra point for being open late and it's a vibe to eat tacos outdoors with friends.                       | [Link](https://www.foodtalkcentral.com/t/late-night-food-in-the-bay-area/19195/7) |     3      |
+#### [Tsuruya](https://www.google.com/maps/place/Tsuruya/@37.8692929,-122.2688655,17z/) ★★★★
+*Berkeley · Ramen* · [FTC→](https://www.foodtalkcentral.com/t/tsuruya-berkeley/17464/1)
+
+Best ramen in Berkeley. IMO competitive with Mensho down in Oakland.
+
+#### [Tahina](https://tahinafreshmed.com/) ★★★
+*Alameda · Mediterranean*
+
+The one decent Mediterranean spot I've found up here. Never been in person, always ordered via DoorDash. Many vegan options. **Highlights**: eggplant dip, pita.
+
+#### [Jungdon Katsu](https://www.jungdonkatsu.com/) ★★★
+*East Bay · Katsu* · [FTC→](https://www.foodtalkcentral.com/t/jungdon-katsu/15727/1)
+
+Used to be a ghost kitchen, ordered via DoorDash/etc. Apparently now has an Emeryville location (haven't been). Better katsu than any specialist I've had.
+
+#### [North Berkeley BART Taco Stand](https://maps.app.goo.gl/ak8XkQM23sGGCqUd6) ★★★
+*Berkeley · Tacos* · [FTC→](https://www.foodtalkcentral.com/t/late-night-food-in-the-bay-area/19195/7)
+
+Open till midnight (2am Fri/Sat). An extra point for being open late and it's a vibe to eat tacos outdoors with friends. **Highlights**: tripe.
+
+#### [Huangcheng Noodle House](https://www.huangchengnoodleca.com/) ★★
+*Oakland · Chinese Noodles*
+
+Good both as soup & "dry" (with sauce). Better in person than delivery. **Highlights**: Chongqing street noodles with knife-cut noodles.
+
+#### [Poppy Bagels](https://www.poppybagelsca.com/) ★★
+*East Bay · Bagels* · [FTC→](https://www.foodtalkcentral.com/t/bagels-east-bay/16465/10)
+
+Excellent texture, fine taste. Reportedly work well with toppings, but I mostly don't judge bagels by how well they work as sandwiches.
+
+#### [The Smokehouse](https://www.eatsmokehouse.com/) ★★
+*Berkeley · Burgers*
+
+They execute the "OG thin fast-food burger" (not a smashburger) style correctly, unlike everyone else trying to do that style of fast-food hamburger around here. **Skip**: fries suck, unless you get them well-done (and you can't get them well-done if you're getting them delivered, alas).
 
 ---
 
 ## Closed
 
-| Restaurant                                                         | Location | Notes                                                              | FTC Review                                                                    |
-|--------------------------------------------------------------------|----------|--------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [**Le Bateau Ivre**](https://www.lebateauivre.net/)                | Berkeley | Was: French cafe, great steak & eggs and French toast. Now closed. | [Link](https://www.foodtalkcentral.com/t/le-bateau-ivre-berkeley/14846/1)     |
-| [**The Kebabery**](https://www.yelp.com/biz/the-kebabery-berkeley) | Berkeley | Was: Middle Eastern, high ingredient quality. Now closed.          | [Link](https://www.foodtalkcentral.com/t/the-kebabery-south-berkeley/5356/12) |
+#### [Le Bateau Ivre](https://www.lebateauivre.net/)
+*Berkeley · French* · [FTC→](https://www.foodtalkcentral.com/t/le-bateau-ivre-berkeley/14846/1)
+
+French cafe, great steak & eggs and French toast. Food was much better than it had to be. A Berkeley institution with many regulars.
+
+#### [The Kebabery](https://www.yelp.com/biz/the-kebabery-berkeley)
+*Berkeley · Middle Eastern* · [FTC→](https://www.foodtalkcentral.com/t/the-kebabery-south-berkeley/5356/12)
+
+Middle Eastern, high ingredient quality.
