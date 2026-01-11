@@ -6,32 +6,136 @@ date: 2026-01-10
 ---
 
 <style>
-/* Wider page for tables */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap');
+
+/* === TUFTE DARK MODE === */
+
+/* Override base template */
+body.bg { background-color: #181818 !important; }
 article { max-width: 1400px; }
 
-/* Softer text color */
-h1, h2, h3, p, td, th, li, a, strong { color: #ccc !important; }
+/* Typography */
+body, p, td, th, li {
+    font-family: 'Source Serif 4', Georgia, serif !important;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
-/* Softer headings */
-h1 { font-size: 1.6em; font-weight: normal; margin-bottom: 0.3em; }
-h2 { font-size: 1.25em; font-weight: normal; margin-top: 1.5em; }
-h3 { font-size: 1.1em; font-weight: normal; }
+/* Colors - soft contrast */
+h1, h2, h3, h4, p, td, th, li, strong, code { color: #d4d4d4 !important; }
+a { color: #a8c7e8 !important; text-decoration: underline; text-decoration-color: #444; text-underline-offset: 2px; }
+a:hover { text-decoration-color: #a8c7e8; }
 
-/* Fixed table layout for consistent columns */
-table { table-layout: fixed; width: 100%; }
+/* Headings - Tufte uses subtle hierarchy */
+h1 {
+    font-size: 2.2em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+    border-bottom: none;
+}
+h2 {
+    font-size: 1.4em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 2em 0 0.8em 0;
+    color: #b0b0b0 !important;
+}
+h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: normal;
+    margin: 1.5em 0 0.5em 0;
+    color: #a0a0a0 !important;
+}
 
-/* 8-column tables: Restaurant | Location | Cuisine | Exceptional Items | Skip/Mixed | Notes | FTC Review | Excitement */
-th:nth-child(1), td:nth-child(1) { width: 11%; }   /* Restaurant */
-th:nth-child(2), td:nth-child(2) { width: 7%; }    /* Location */
-th:nth-child(3), td:nth-child(3) { width: 9%; }    /* Cuisine */
-th:nth-child(4), td:nth-child(4) { width: 21%; }   /* Exceptional Items / Notes (in 6-col) */
-th:nth-child(5), td:nth-child(5) { width: 12%; }   /* Skip/Mixed / FTC Review (in 6-col) */
-th:nth-child(6), td:nth-child(6) { width: 21%; }   /* Notes / Excitement (in 6-col) */
-th:nth-child(7), td:nth-child(7) { width: 7%; }    /* FTC Review */
-th:nth-child(8), td:nth-child(8) { width: 7%; text-align: center; }  /* Excitement */
+/* Intro paragraph */
+article > p:first-of-type {
+    font-size: 1.1em;
+    color: #999 !important;
+    margin-bottom: 2em;
+}
 
-/* Word wrapping for long text */
+/* Horizontal rules - subtle */
+hr {
+    border: none !important;
+    border-top: 1px solid #333 !important;
+    margin: 2.5em 0 !important;
+}
+
+/* === TABLES - Tufte style === */
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.9em;
+}
+
+/* Remove all borders */
+th, td {
+    border: none !important;
+    padding: 0.6em 0.8em;
+    text-align: left;
+    vertical-align: top;
+    background: transparent !important;
+}
+
+/* Header row - subtle underline only */
+thead {
+    border-bottom: 2px solid #444;
+}
+th {
+    font-weight: 600;
+    font-style: normal;
+    color: #888 !important;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Alternating row backgrounds - very subtle */
+tbody tr:nth-child(odd) { background: rgba(255,255,255,0.02) !important; }
+tbody tr:nth-child(even) { background: transparent !important; }
+
+/* Row separator lines */
+tbody tr { border-bottom: 1px solid #2a2a2a; }
+
+/* Column widths for 8-col tables */
+th:nth-child(1), td:nth-child(1) { width: 12%; }  /* Restaurant */
+th:nth-child(2), td:nth-child(2) { width: 7%; }   /* Location */
+th:nth-child(3), td:nth-child(3) { width: 8%; }   /* Cuisine */
+th:nth-child(4), td:nth-child(4) { width: 20%; }  /* Exceptional Items */
+th:nth-child(5), td:nth-child(5) { width: 12%; }  /* Skip/Mixed */
+th:nth-child(6), td:nth-child(6) { width: 22%; }  /* Notes */
+th:nth-child(7), td:nth-child(7) { width: 6%; }   /* FTC Review */
+th:nth-child(8), td:nth-child(8) { width: 6%; text-align: center; }  /* Excitement */
+
+/* Restaurant names - slightly emphasized */
+td:first-child { font-weight: 500; }
+td:first-child a { color: #c8dff5 !important; }
+
+/* FTC Review column - subtle link */
+td:nth-last-child(2) a {
+    color: #777 !important;
+    font-size: 0.85em;
+}
+
+/* Excitement column - numeral styling */
+td:last-child {
+    font-variant-numeric: tabular-nums;
+    color: #999 !important;
+}
+
+/* Word wrapping */
 td { word-wrap: break-word; overflow-wrap: break-word; }
+
+/* Lists (for rankings section) */
+ol, ul { padding-left: 1.5em; }
+li { margin-bottom: 0.3em; }
+
+/* Footer override */
+.ft { background: #181818 !important; }
 </style>
 
 # Bay Area Restaurant Recommendations
@@ -113,18 +217,6 @@ Compiled from my FoodTalkCentral reviews (2022-2026) and other personal notes, w
 | [**Poppy Bagels**](https://www.poppybagelsca.com/)                                     | East Bay | Bagels          | Bagels (especially as sandwiches)                                 | -                | Good texture, acceptable flavor. Reportedly work well with toppings.                                                                                                  | [Link](https://www.foodtalkcentral.com/t/bagels-east-bay/16465/10)                |     2      |
 | [**The Smokehouse**](https://www.eatsmokehouse.com/)                                   | Berkeley | Burgers         | "Correct" thin hamburgers, much less greasy                       | Fries (terrible) | Unlike everyone else doing that style of fast food hamburger.                                                                                                         | -                                                                                 |     2      |
 | [**North Berkeley BART Taco Stand**](https://maps.app.goo.gl/ak8XkQM23sGGCqUd6)        | Berkeley | Tacos           | Tripe                                                             | -                | Open till midnight (2am Fri/Sat). Self-service toppings. An extra point for being open late and it's a vibe to eat tacos outdoors with friends.                       | [Link](https://www.foodtalkcentral.com/t/late-night-food-in-the-bay-area/19195/7) |     3      |
-
----
-
-## Rankings
-
-**2-Star Michelin Bay Area:**
-1. Commis
-2. Lazy Bear
-3. Californios
-
-**Best East Bay Sushi:**
-Utzutzu > Sushi Salon > Delage > Mujiri
 
 ---
 
