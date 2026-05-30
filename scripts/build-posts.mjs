@@ -8,6 +8,7 @@ const GA_ID = 'UA-127645120-1';
 
 // Legacy posts not in markdown-sources (date format: YYYY-MM-DD)
 const LEGACY_POSTS = [
+    { date: '2026-05-29', title: 'Metapod Menace', slug: 'metapod-menace' },
     { date: '2018-12-27', title: 'What Price the Bay', slug: 'costofliving' },
     { date: '2018-10-16', title: 'Dependent typing considered unreadable', slug: 'readability' },
 ];
